@@ -6,7 +6,7 @@ Once you have created an account at http://www.iucnredlist.org/ you can [downloa
 
 ## Converting to GeoJSON
 
-For background see [Managing GeoJSON data using GDAL](https://savaslabs.com/2015/05/25/manage-geojson.html).
+For background see [How to convert Shapefiles to GeoJSON maps for use on GitHub (and why you should)](https://ben.balter.com/2013/06/26/how-to-convert-shapefiles-to-geojson-for-use-on-github/) and [Managing GeoJSON data using GDAL](https://savaslabs.com/2015/05/25/manage-geojson.html).
 
 IUCN shapefiles can be big, and the resulting GeoJSON can be huge (for example, if a species distribution is based on geographic provinces, and the polygons follow those the geographical boundaries with a high degree of precision).
 
