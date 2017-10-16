@@ -10,7 +10,23 @@ For background see [How to convert Shapefiles to GeoJSON maps for use on GitHub 
 
 IUCN shapefiles can be big, and the resulting GeoJSON can be huge (for example, if a species distribution is based on geographic provinces, and the polygons follow those the geographical boundaries with a high degree of precision).
 
-### Extract GeoJSON for one species
+### Install GDAL
+
+On a Mac download precompiled GDAL from http://www.kyngchaos.com/software:frameworks and add 
+```
+export PATH=/Library/Frameworks/GDAL.framework/Programs:$PATH
+```
+To .bash_profile
+
+### Convert one file
+
+Simply use ogr2ogr:
+
+```
+ogr2ogr -f GeoJson species_13418.geojson species_13418.shp
+```
+
+### Extract GeoJSON for one species from multi-species file
 
 The GDAL utility **ogr2ogr** can be used to extract and simplify GeoJSON. For example, given the data for shrimps (FW_SHRIMP) we can extract data for *Euryrhynchus amazoniensis* like this:
 
